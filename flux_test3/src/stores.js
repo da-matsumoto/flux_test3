@@ -12,7 +12,7 @@ appDispatcher.register(payload => {
 })
 appDispatcher.register(payload => {
     if (payload.actionType === ActionType.SUBMIT_NAME) {
-        nameStore.message = nameStore.name + 'さん、こんにちは。'
+        messageStore.message = nameStore.name + 'さん、こんにちは。'
         messageStore.onChange()
     }
 })
